@@ -1,4 +1,4 @@
-FROM xhofe/alist:latest
+FROM xhofe/alist:v2.1.1
 LABEL MAINTAINER="i@nn.ci"
 
 RUN chmod -R 777 /opt/alist/data
@@ -12,4 +12,3 @@ ENV CACHE_EXPIRATION=60
 ENV CACHE_CLEANUP_INTERVAL=120
 
 ENTRYPOINT ["sh", "/entrypoint.sh"]
-#v2.1.0 
